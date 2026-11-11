@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Netrapal | FinTech Consulting for Payments &amp; Financial Transactions</title>
+<meta name="description" content="Technology consulting for payments, ledgers and financial platforms. We design, build and harden systems that move money correctly.">
+<meta name="theme-color" content="#0b2545">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://challenges.cloudflare.com; style-src 'self'; img-src 'self' data:; connect-src 'self' https://challenges.cloudflare.com; frame-src https://challenges.cloudflare.com; form-action 'self'; base-uri 'self'">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css">
+<script src="/main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href="/" aria-label="Netrapal home">
+      <img src="/favicon.svg" alt="" width="28" height="28">
+      <span>Netrapal</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#approach">Approach</a>
+      <a class="btn btn-small" href="#contact">Contact us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">FinTech technology consulting</p>
+      <h1>Engineering for money in motion.</h1>
+      <p class="lead">We help financial companies design, build and harden the systems that move money: payments, ledgers, reconciliation and the integrations in between. Correctness first, then speed.</p>
+      <p class="cta-row">
+        <a class="btn" href="#contact">Talk to an engineer</a>
+        <a class="btn btn-ghost" href="#services">See what we do</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services</h2>
+      <p class="section-intro">Hands-on consulting for teams that handle financial transactions and cannot afford to get them wrong.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Payments architecture</h3>
+          <p>Design of card, bank-transfer and wallet flows: authorization, capture, refunds, retries and failure handling that stays consistent under load.</p>
+        </article>
+        <article class="card">
+          <h3>Ledgers &amp; reconciliation</h3>
+          <p>Double-entry ledger design, balance integrity, settlement matching and automated reconciliation so books and bank statements agree.</p>
+        </article>
+        <article class="card">
+          <h3>Integrations</h3>
+          <p>Connecting processors, banks, KYC and accounting systems through clean, well-tested APIs, webhooks and file-based interfaces.</p>
+        </article>
+        <article class="card">
+          <h3>Reliability &amp; controls</h3>
+          <p>Idempotency, audit trails, monitoring and operational runbooks, built with security and compliance requirements in mind.</p>
+        </article>
+        <article class="card">
+          <h3>Platform modernization</h3>
+          <p>Incremental migration away from legacy batch systems and monoliths, with no big-bang cutovers and no lost transactions.</p>
+        </article>
+        <article class="card">
+          <h3>Technical due diligence</h3>
+          <p>Independent reviews of payment and ledger systems for investors, acquirers and leadership teams who need a clear-eyed assessment.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="expertise" class="section alt">
+    <div class="container split">
+      <div>
+        <h2>Why transaction handling is different</h2>
+        <p>Most software can tolerate an occasional glitch. Financial software cannot. A duplicated charge, a missing ledger entry or an unreconciled settlement becomes a customer complaint, an audit finding or a loss.</p>
+        <p>Our background is in building and operating systems where every transaction must be accounted for. We bring those habits to your platform.</p>
+      </div>
+      <ul class="checks">
+        <li><strong>Idempotent by design.</strong> Safe retries without double-processing.</li>
+        <li><strong>Traceable end to end.</strong> Every movement of money can be explained.</li>
+        <li><strong>Reconciled continuously.</strong> Differences are surfaced early, not at month end.</li>
+        <li><strong>Secure by default.</strong> Least privilege, encryption and minimal data retention.</li>
+        <li><strong>Built to be operated.</strong> Observability and runbooks for the people on call.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="approach" class="section">
+    <div class="container">
+      <h2>How we work</h2>
+      <ol class="steps">
+        <li><h3>Understand</h3><p>We learn your money flows, constraints and risks before proposing anything.</p></li>
+        <li><h3>Design</h3><p>A clear, reviewable plan with trade-offs spelled out in plain language.</p></li>
+        <li><h3>Build &amp; verify</h3><p>Working software, tested against failure cases, delivered alongside your team.</p></li>
+        <li><h3>Hand over</h3><p>Documentation and knowledge transfer so you are never dependent on us.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container contact">
+      <div>
+        <h2>Contact us</h2>
+        <p>Tell us a little about what you are working on. We reply to every genuine enquiry, usually within two business days.</p>
+        <p class="muted">We only use your details to respond to your message.</p>
+      </div>
+
+      <form id="contact-form" class="form" action="/api/contact" method="post" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+        </div>
+        <div class="field">
+          <label for="company">Company <span class="muted">(optional)</span></label>
+          <input id="company" name="company" type="text" autocomplete="organization" maxlength="120">
+        </div>
+        <div class="field">
+          <label for="message">How can we help?</label>
+          <textarea id="message" name="message" rows="5" maxlength="4000" required></textarea>
+        </div>
+
+        <!-- Honeypot: hidden from people, tempting to bots -->
+        <div class="hp" aria-hidden="true">
+          <label for="website">Leave this field empty</label>
+          <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <!-- Turnstile loads on demand when the form is near the viewport.
+             Replace the site key below with your own (see README). -->
+        <div id="turnstile" data-sitekey="REPLACE_WITH_TURNSTILE_SITE_KEY"></div>
+
+        <button class="btn" type="submit">Send message</button>
+        <p id="form-status" class="status" role="status" aria-live="polite"></p>
+        <noscript><p class="status error">The contact form needs JavaScript enabled. Please enable it and reload this page.</p></noscript>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year">2026</span> Netrapal. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
